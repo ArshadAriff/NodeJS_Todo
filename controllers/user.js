@@ -20,7 +20,7 @@ export const login = async (req, res) => {
 
     sendCookie(user, res, `Welcome back, ${user.name}`, 200);
   } catch (error) {
-    next(errror);
+    next(error);
   }
 };
 
